@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebDev Task 3</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌐 Advanced Styling and JavaScript </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#jokes">Jokes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." />
+        <button>🔍</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <h1>Welcome to My Art Space</h1>
+      <p>"Where creativity meets imagination" <br> "A world of art, in every stroke" <br>"Creating something beautiful, every day"</p>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="img 1.jpeg" alt="Gallery 1">
+        <img src="lord shiva.jpeg" alt="Gallery 2">
+        <img src="lordkrishna.jpeg" alt="Gallery 3">
+      </div>
+    </section>
+
+      <section id="quiz" class="section">
+  <h2>Quiz</h2>
+  <form id="quiz-form">
+    <div class="quiz-question">
+      <p>1. What is the capital of France?</p>
+      <label><input type="radio" name="q1" value="a"> A. Berlin</label><br>
+      <label><input type="radio" name="q1" value="b"> B. Rome</label><br>
+      <label><input type="radio" name="q1" value="c"> C. Paris</label>
+    </div>
+
+    <div class="quiz-question">
+      <p>2. Who wrote "Hamlet"?</p>
+      <label><input type="radio" name="q2" value="a"> A. Charles Dickens</label><br>
+      <label><input type="radio" name="q2" value="b"> B. William Shakespeare</label><br>
+      <label><input type="radio" name="q2" value="c"> C. Jane Austen</label>
+    </div>
+
+    <div class="quiz-question">
+      <p>3. What is the boiling point of water?</p>
+      <label><input type="radio" name="q3" value="a"> A. 100°C</label><br>
+      <label><input type="radio" name="q3" value="b"> B. 50°C</label><br>
+      <label><input type="radio" name="q3" value="c"> C. 200°C</label>
+    </div>
+
+    <div class="quiz-question">
+      <p>4. Which planet is known as the Red Planet?</p>
+      <label><input type="radio" name="q4" value="a"> A. Venus</label><br>
+      <label><input type="radio" name="q4" value="b"> B. Mars</label><br>
+      <label><input type="radio" name="q4" value="c"> C. Jupiter</label>
+    </div>
+
+    <div class="quiz-question">
+      <p>5. What does HTML stand for?</p>
+      <label><input type="radio" name="q5" value="a"> A. HyperText Markup Language</label><br>
+      <label><input type="radio" name="q5" value="b"> B. Home Tool Markup Language</label><br>
+      <label><input type="radio" name="q5" value="c"> C. Hyperlinks and Text Markup Language</label>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Answers</button>
+  </form>
+  <p id="quiz-score" class="score-text"></p>
+</section>
+
+    <section id="jokes" class="section">
+      <h2>Jokes</h2>
+      <button onclick="fetchJoke()">Get a Random Joke</button>
+      <p id="joke-display"></p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WebDev Task 3. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
